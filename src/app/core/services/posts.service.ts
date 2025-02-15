@@ -10,7 +10,7 @@ export class PostsService {
 
   constructor(private _HttpClient: HttpClient) { }
 
-  creatPost(data: object):Observable<any> {
+  createPost(data: object):Observable<any> {
     return this._HttpClient.post(`${environment.baseUrl}/posts`, data)
   }
 
